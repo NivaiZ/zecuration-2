@@ -1,0 +1,3 @@
+{
+  "extends": "/absolute/path/to/stylelint-config-htmlacademy"
+}

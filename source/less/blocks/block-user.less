@@ -1,0 +1,256 @@
+.block-user {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  padding: 0 38px 0 42px;
+}
+
+.block-user__block {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a0a0a0;
+  padding: 0;
+}
+
+.block-user__heading {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: @black;
+}
+
+.block-user__text {
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: @medium--gray;
+}
+
+.block-user__item {
+  list-style: none;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.block-user__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.block-user__number--pink {
+  position: relative;
+}
+
+.block-user__number--green {
+  position: relative;
+}
+
+.blocks-user__number--gold {
+  position: relative;
+}
+
+.block-user__number--pink::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: @shade--pink;
+  border-radius: 50%;
+  top: 10px;
+  right: -15px;
+}
+
+.block-user__number--green::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: @shade--green;
+  border-radius: 50%;
+  top: 10px;
+  right: -15px;
+}
+
+.block-user__number--gold::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: @shade-yellow;
+  border-radius: 50%;
+  top: 10px;
+  right: -15px;
+}
+
+.block-user__number--transparent--green {
+  position: relative;
+}
+
+.block-user__number--transparent--green::after {
+  position: absolute;
+  border: 1px solid @shade--green;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10px;
+  right: -15px;
+}
+
+.block-user__number--transparent--pink::after {
+  position: absolute;
+  border: 1px solid @shade--pink;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10px;
+  right: -15px;
+}
+
+.block-user__number--transparent--gold {
+  position: relative;
+}
+
+.block-user__number--transparent--gold::after {
+  position: absolute;
+  border: 1px solid @shade-yellow;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 10px;
+  right: -15px;
+}
+
+.block-user__arrow {
+  position: relative;
+}
+
+.block-user__arrow::after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  top: 3px;
+  width: 5px;
+  height: 3px;
+  border-top: 1px solid @medium--gray;
+  border-right: 1px solid @medium--gray;
+}
+
+.block-user__arrow--bottom::after {
+  transform: rotate(135deg);
+}
+
+.block-user__number {
+  position: relative;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 49px;
+  margin-right: 13px;
+}
+
+.block-user__persent {
+  font-size: 9px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @medium--gray;
+  margin: 0;
+}
+
+.block-user__number--opacity {
+  color: @medium--gray;
+}
+
+.block-user__persent--red {
+  position: relative;
+}
+
+.block-user__persent--green {
+  position: relative;
+}
+
+.block-user__persent--red::after {
+  position: absolute;
+  content: "";
+  border-top: 3px solid @no-color;
+  border-bottom: 3px solid @no-color;
+  border-left: 3px solid @shade--pink;
+  transform: rotate(-90deg);
+  left: 0;
+}
+
+.block-user__persent--green::after {
+  position: absolute;
+  content: "";
+  border-top: 3px solid @no-color;
+  border-bottom: 3px solid @no-color;
+  border-left: 3px solid @shade--green;
+  transform: rotate(-90deg);
+  left: 0;
+}
+
+.block-user__item--length {
+  text-overflow: clip;
+}
+
+.block-user__item--length dt {
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.block-user__time--green {
+  color: @shade--green;
+  font-size: 11px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.block-user__time--red {
+  color: @shade--pink;
+  font-size: 11px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.block-user__time--separator {
+  color: @medium--gray;
+}
+
+.block-user__work--red {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 600;
+  color: @shade--pink;
+
+}
+
+.block-user__work--green {
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 600;
+  color: @shade--green;
+}
+
+.block-user__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.block-user__center--alignment {
+  text-align: center;
+}
+
+.block-user__center--length {
+  margin-left: 10px;
+}
