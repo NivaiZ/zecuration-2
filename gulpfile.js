@@ -40,12 +40,31 @@ exports.html = html;
 
 // Images
 
-const copyImages = () => {
-  return gulp.src("source/img/**/*.{jpg,svg}")
+const copyImages = (done) => {
+  return gulp.src([
+    "source/*.png",
+  ], {
+    base: "source"
+  })
     .pipe(gulp.dest("build/img"))
+  done();
 }
 
 exports.copyImages = copyImages;
+
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    "source/fonts/*.{woff2,woff}",
+  ], {
+    base: "source"
+  })
+    .pipe(gulp.dest("build/fonts"))
+  done();
+}
+
+exports.copy = copy;
 
 // Server
 
@@ -76,6 +95,7 @@ const build = gulp.series(
   gulp.parallel(
     styles,
     html,
+    copyImages,
   ),
 );
 
@@ -90,9 +110,11 @@ const watcher = () => {
 
 exports.default = gulp.series(
   copyImages,
+  copy,
   gulp.parallel(
     styles,
     html,
+    copyImages,
   ),
   gulp.series(
     server,
